@@ -1,3 +1,11 @@
+/*
+Functions:
+empty
+pop
+push
+top
+size
+*/
 #include<bits/stdc++.h>
 using namespace std;
 void ps(stack<int>x)//makes copy
@@ -14,6 +22,7 @@ int main()
     s.push(4);
     s.push(24);
     s.push(4344);
+    cout << s.size() << "\n";
     ps(s);
     return 0;
 }

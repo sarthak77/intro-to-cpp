@@ -1,0 +1,12 @@
+inbuilt functions
+
+sort
+accumulate
+iter_swap
+reverse
+
+
+others
+
+merge sort
+vector.erase is O(n) and not constant
