@@ -1,9 +1,0 @@
-inbuilt:
-
-s.substr(a,b)
-//gives substring from a of length b
-
-
-others:
-
-structures in c++

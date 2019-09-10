@@ -1,4 +1,0 @@
-inbuilt:
-binary search
-lower bound
-upper bound
