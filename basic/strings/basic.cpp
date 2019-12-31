@@ -38,6 +38,7 @@ int main()
 	x.insert(3,"aaaa");
 	cout << x << "\n";
 	x.erase(3,4);
+	x.erase(x.begin());
 	cout << x << "\n";
 	return 0;
 }

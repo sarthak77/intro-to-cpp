@@ -19,7 +19,10 @@ long long int fep(long long int x,long long int y, long long int m)
     if(y%2)
         return ((fep(x,y-1,m)*fep(x,1,m))%m);
     else
-        return ((fep(x,y/2,m)*fep(x,y/2,m))%m);
+    {
+        long long int t=fep(x,y/2,m);
+        return (t*t)%m;
+    }
 }
 
 int main()

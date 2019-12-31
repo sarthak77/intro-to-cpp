@@ -1,12 +1,3 @@
-/*
-There is one important difference between map::find() and
-map::operator []. While map::find() will never change the contents of
-map, operator [] will create an element if it does not exist. In some
-cases this could be very convenient, but it’s definitly a bad idea to
-use operator [] many times in a loop, when you do not want to add new
-elements. That’s why operator [] may not be used if map is passed as a
-const reference parameter to some function:
-*/
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -32,6 +23,7 @@ int main()
     
     m.insert(pair<string,int>("a",432));
     cout << m.count("a") << "\n";
+    pm(m);
     
     //remove from map
     m.erase("a");

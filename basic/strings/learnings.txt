@@ -1,0 +1,11 @@
+string s(5,'R'):- s="RRRRR"
+s.substr(a,b):- substring of s of b length starting from pos a
+s.substr(a):- substring of s from a to last character
+s.erase(a,b):- erase b characters starting from pos a
+s.erase(it):- erase a char specified by iterator it
+s.insert(a,s2):- insert s2 starting from pos a
+s.insert(a,b,c):- insert character c, a times starting from pos b
+
+
+For split string in c++
+https://www.geeksforgeeks.org/boostsplit-c-library/

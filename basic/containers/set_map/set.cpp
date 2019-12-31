@@ -1,26 +1,24 @@
 /*
-NOTES:Set is a red black tree which is a bst of logn height(self balancing bst)
-1))
-STL provides the special container for it – set. Set can add, remove
-and check the presence of particular element in O(log N), where N is
-the count of objects in the set. While adding elements to set, the
-duples [duplicates?] are discarded. A count of the elements in the set,
-N, is returned in O(1).
-2))The push_back() member may not be used with set. It make sense:
-since the order of elements in set does not matter, push_back() is not
-applicable here.
-3))Since set is not a linear container, it’s impossible to take the
-element in set by index. Therefore, the only way to traverse the
-elements of set is to use iterators.
+NOTES:
+Set is a red black tree which is a bst of logn height(self balancing bst)
+Set can add, remove and check the presence of particular element in O(log N), where N is the count of objects in the set.
+While adding elements to set, the duples [duplicates?] are discarded.
+A count of the elements in the set,N, is returned in O(1).
+
+The push_back() member may not be used with set. It make sense: since the order of elements in set does matter, push_back() is not applicable here.
+Since set is not a linear container, it’s impossible to take the element in set by index. Therefore, the only way to traverse the elements of set is to use iterators.
 */
+
 #include<bits/stdc++.h>
 using namespace std;
+
 void ps(set<int>x)
 {
-    for(set<int>::iterator it=x.begin();it!=x.end();it++)
+    for(auto it=x.begin();it!=x.end();it++)
     cout << *it << " ";
     cout << "\n";
 }
+
 int main()
 {
     set<int>s;
